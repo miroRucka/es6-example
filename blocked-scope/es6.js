@@ -1,18 +1,15 @@
 //co by sa stalo v tomto pripade keby sme pouzili var, aky by bol vysledok, 
 //co urcovalo v es5 scope?
 
-function calculateTotalAmount (vip) {
-  var amount = 0
+function vypocitajHodnotu (vip) {
+  var vysledok = 0
   if (vip) {
-    let amount = 1
+    let vysledok = 1
   }
   {
-    let amount = 100
-    {
-      let amount = 1000
-      }
+    let vysledok = 100
   }  
-  return amount
+  return vysledok;
 }
 
-console.log(calculateTotalAmount(true)) //vysledok bude 0
+console.log(vypocitajHodnotu(true)) //vysledok bude 0
